@@ -13,7 +13,6 @@ package unigo
 
 import (
 	"bytes"
-	"fmt"
 	"strconv"
 	"unicode"
 	"unicode/utf16"
@@ -37,7 +36,7 @@ func Encode(b []byte) []byte {
 					// A valid pair; consume.
 					b = b[6:]
 					n = utf8.EncodeRune(bb, dec)
-					fmt.Fprintf(out, "%s", bb[:n])
+					out.Write(bb[:n])
 					continue
 				} else {
 					// Invalid surrogate; fall back to replacement rune.
@@ -45,10 +44,10 @@ func Encode(b []byte) []byte {
 				}
 			}
 			n = utf8.EncodeRune(bb, rr)
-			fmt.Fprintf(out, "%s", bb[:n])
+			out.Write(bb[:n])
 			continue
 		}
-		fmt.Fprintf(out, "%s", b[:1])
+		out.Write(b[:1])
 		if len(b) > 1 {
 			b = b[1:]
 		} else {
