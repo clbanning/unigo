@@ -51,7 +51,7 @@ func Encode(b []byte) []byte {
 		if len(b) > 1 {
 			b = b[1:]
 		} else {
-			b = nil
+			break
 		}
 	}
 	return out.Bytes()
