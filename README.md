@@ -13,6 +13,10 @@ or:
 fmt.Println(unigo.EncodeToString[]byte(`{"key":"wasn\u0027t"}`)) // prints: {"key":"wasn't"}
 </pre>
 
+<h4>Documentation</h4>
+
+At the [usual place](https://godoc.org/github.com/clbanning/unigo).
+
 <h4>Motivation</h4>
 
 There was a discussion on [go-nuts](https://groups.google.com/forum/#!topic/golang-nuts/KO1yubIbKpU) that seemed to call out for such a utility.
