@@ -1,5 +1,5 @@
 <h2>unigo - encode unicode characters in slice as string</h2>
-Utility functions for encoding ASCII unicode code-points to runes.
+Utility functions for encoding ASCII unicode code-points (UTF-8/UTF-16) to runes.
 
 <h4>Usage</h4>
 

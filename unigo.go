@@ -1,7 +1,7 @@
 // Encode ASCII unicode code-points in a slice as runes.
 // Copyright ©C. L. Banning, 2016.  See LICENSE file.
 
-// Encode ASCII unicode code-points in a slice as runes.
+// Utility functions for encoding ASCII unicode code-points (UTF-8/UTF-16) to runes.
 //
 // Examples:
 //	data := []byte(`\u044d\u0442\u043e \u0442\u0435\u0441\u0442 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435`)
