@@ -10,7 +10,7 @@ fmt.Println(unigo.EncodeToString(data) // prints: это тест сообщен
 
 or:
 <pre>
-fmt.Println(unigo.EncodeToString[]byte(`{"key":"wasn\u0027t"}`)) // prints: {"key":"wasn't"}
+fmt.Println(unigo.EncodeToString([]byte(`{"key":"wasn\u0027t"}`))) // prints: {"key":"wasn't"}
 </pre>
 
 <h4>Documentation</h4>
